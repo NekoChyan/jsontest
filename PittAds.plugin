@@ -3,10 +3,10 @@
 
 ^https:\/\/pagead2\.googlesyndication\.com\/pcs\/activeview\?.*$ - reject
 ^https:\/\/pagead2\.googleadservices\.com\/pagead\/adview\?.*$ - reject
-
+^https:\/\/googleads\.g\.doubleclick\.net\/pagead\/interaction\/\?.*$ - reject
 
 
 # Block Ads End
 
 [MITM]
-hostname = pagead2.googleadservices.com, pagead2.googlesyndication.com
+hostname = pagead2.googleadservices.com, pagead2.googlesyndication.com, googleads.g.doubleclick.net
