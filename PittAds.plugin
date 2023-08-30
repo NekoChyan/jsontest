@@ -4,9 +4,11 @@
 ^https:\/\/pagead2\.googlesyndication\.com\/pcs\/activeview\?.*$ - reject
 ^https:\/\/pagead2\.googleadservices\.com\/pagead\/adview\?.*$ - reject
 ^https:\/\/googleads\.g\.doubleclick\.net\/pagead\/interaction\/\?.*$ - reject
+^https:\/\/static\.aottercdn\.com\/trek\/media\/.+ - reject
+^https:\/\/ad\.appier\.net\/.+ - reject
 
 
 # Block Ads End
 
 [MITM]
-hostname = pagead2.googleadservices.com, pagead2.googlesyndication.com, googleads.g.doubleclick.net
+hostname = pagead2.googleadservices.com, pagead2.googlesyndication.com, googleads.g.doubleclick.net, static.aottercdn.com, ad.appier.net
