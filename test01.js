@@ -14,7 +14,7 @@ function Post_Data(){
 			"version": "1.0.0"})
 	  }
 	}
-	$httpClient.post(GetToken,function(error,response,data)
+	$httpClient.post(GetToken,function(error,response,data))
     {
         var token,data,sdata;
 		data = response.data;
@@ -33,9 +33,9 @@ function Post_Data(){
 	   "token":token,
 		"tp":2,
 		"para":"<dt>2023/08/31</dt><rid>117446</rid>" })
-	  })
+	  }
 	}
-	$httpClient.post(GetParams,function(error,response,data)
+	$httpClient.post(GetParams,function(error,response,data))
     {
         var StatusCode,ResponseHeaders;
         StatusCode = response.status;
