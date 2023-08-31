@@ -1,14 +1,10 @@
-//Bark APP 通知推送Key
-$.barkKey = '';
-
-// 为通知准备的空数组
-$.notifyMsg = [];
 
 (async function() { // 立即运行的匿名异步函数
-	await main();
+	await book( );
+    await Login( );
 });
 
-async function main( ) { 
+async function book( ) { 
     const reqUrl = {
         url: 'https://app.inventec.com/iservice/iServicePWA.asmx/doRouteBook', //登录接口
         headers: { //请求头
@@ -27,3 +23,22 @@ async function main( ) {
             console.log(JSON.stringify(json));
         });
 }
+
+const response = await fetch('https://app.inventec.com/iservice/iServicePWA.asmx/UserLogin', {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ "eid": "IEC120698",
+  "pass": "$Melon7809",
+  "device": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+  "co": "Google Inc.",
+  "IsOnce": "",
+  "version": "1.0.0"})
+});
+
+const data = await response.json();
+const sdata = JSON.stringify(data);
+//console.log(sdata);
+console.log(typeof(sdata));
