@@ -1,11 +1,15 @@
-const body = {
-    eid: "IEC120698",
-    token: "C9479D1051F34293AEE4B6BB246323",
-    device: "<token>C9479D1051F34293AEE4B6BB246323</token>",
-    para: "<dt>2023/09/01</dt><rid>117475</rid>",
-    tp: 2
-};
-
-$modifyRequest({
-    body: JSON.stringify(body)
+const response = await fetch('https://app.inventec.com/iservice/iServicePWA.asmx/doRouteBook', {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ "eid":"IEC120698",
+  "device":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+ "token":"E39D7E0C12A0463CAABF98B1E2834E",
+  "tp":2,
+  "para":"<dt>2023/09/01</dt><rid>117476</rid>" })
 });
+
+const json = await response.json();
+console.log(JSON.stringify(json));
