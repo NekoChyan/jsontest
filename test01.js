@@ -12,7 +12,7 @@ function Post_Data(){
 			"co": "Google Inc.",
 			"IsOnce": "",
 			"version": "1.0.0"})
-	  })
+	  }
 	}
 	$httpClient.post(GetToken,function(error,response,data)
     {
