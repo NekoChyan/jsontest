@@ -1,0 +1,5 @@
+#!name=NextDNS
+#!desc=Roger Doh
+ 
+[General]
+doh-server = https://dns.nextdns.io/c75548

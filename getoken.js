@@ -45,7 +45,10 @@ async function getToken() {
       };
       $httpClient.post(request, function(error,response,data){
         const bdata = $response.data;
+        console.log(error);
+        console.log(data);
         console.log(bdata);
+        return resolve();
       });
     } catch (error) {
       return reject(['保存失敗 ‼️', error]);
