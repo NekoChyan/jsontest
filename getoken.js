@@ -45,6 +45,8 @@ async function getToken() {
       };
       $httpClient.post(request, function(error,response,data){
         const bdata = $response.data;
+        console.log(error);
+        console.log(data);
         console.log(bdata);
       });
     } catch (error) {
