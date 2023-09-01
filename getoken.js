@@ -48,6 +48,7 @@ async function getToken() {
         console.log(error);
         console.log(data);
         console.log(bdata);
+        return resolve();
       });
     } catch (error) {
       return reject(['保存失敗 ‼️', error]);
