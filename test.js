@@ -1,5 +1,4 @@
-function getToken(){
-    const request = {
+const request = {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -10,10 +9,11 @@ function getToken(){
             "co": "Google Inc.",
             "IsOnce": "",
             "version": "1.0.0"})
-    };
-    $httpClient.post(request, function(error,response,data){
-        const bdata = $response.data;
-        console.log(error);
-        console.log(data);
-        console.log(bdata);});
-}
+};
+$httpClient.post(request, function(error,response,data){
+    const bdata = $response.data;
+    console.log(error);
+    console.log(data);
+    console.log(response);
+    console.log(bdata);
+});
