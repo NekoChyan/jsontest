@@ -18,16 +18,8 @@ function Post_Data()
     }
     $httpClient.post(GetExampleParams,function(error,response,data)
     {
-        var StatusCode,ResponseHeaders;
-        StatusCode = response.status;
-        ResponseHeaders = response.headers;
-        console.log(response);
-        console.log(StatusCode);//400
-        console.log(ResponseHeaders);//Object
-        console.log(error);
-        console.log(data);
-        console.log(Json.stringify(data));//if data is Json String
-        //Loon支持使用Console.log输出调试信息
+        const obj = JSON.parse($response.body);
+        console.log(JSON.stringify(obj));
     })
 }
 Post_Data()
