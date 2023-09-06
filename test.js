@@ -18,8 +18,8 @@ function Post_Data()
     }
     $httpClient.post(GetExampleParams,function(error,response,data)
     {
-        const obj = JSON.parse($response.body);
-        console.log(JSON.stringify(obj))
+        const obj = JSON.parse(data);
+        console.log(JSON.stringify(obj));
     })
 }
 Post_Data()
