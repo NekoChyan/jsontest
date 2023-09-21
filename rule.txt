@@ -1,22 +1,22 @@
-- ^https?:\/\/a\.line\.me\/er\/lads\/v\d\/ei\? - reject
-- ^https?:\/\/a\.line\.me\/er\/la(ss|dg)\/v\d\/event\/image - reject
-- ^https?:\/\/a\.line\.me\/lass\/api\/v\d\/ads$ - reject
-- ^https?:\/\/a\.line\.me\/oa\/v\d\/e$ - reject
-- ^https?:\/\/a\.line\.me\/cs\/v\d\/oa$ - reject
-- ^https?:\/\/gw\.line\.naver\.jp\/ext\/lgfp\/lad\/v1$ - reject
-- ^https?:\/\/gw\.line\.naver\.jp\/lass\/api\/v1\/ads$ - reject
-- ^https?:\/\/gw\.line\.naver\.jp\/tr\/event$ - reject
-- ^https?:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/ - reject
-- ^https?:\/\/buy\.line\.me\/api\/graphql\?variables - reject
-- ^https?:\/\/crs-event\.line\.me\/v\d\/imp - reject
-- ^https?:\/\/obs\.line-scdn\.net\/0h.+\/(o|m)\d+x\d+$ - reject
-- ^https?:\/\/obs\.line-scdn\.net\/0h.+\/\d+p\.mp4$ - reject
-- ^https?:\/\/obs\.line-scdn\.net\/r\/linecrs\/.+\/m180x180$ - reject
-- ^https?:\/\/d\.line-scdn\.net\/lcp-prod-photo\/20.+\.(jpg|jpeg|png) - reject
-- ^https?:\/\/cix\.line-apps\.com\/R4\? - reject
-- ^https?:\/\/scdn\.line-apps\.com\/appresources\/moretab\/list\.json - reject
-- ^https?:\/\/scdn\.line-apps\.com\/lan\/image\/line\/bannerImageEvent\/ - reject
-- ^https?:\/\/scdn\.line-apps\.com\/lan\/document\/pageEvent\/line\/ios\/ - reject
-- ^https?:\/\/sch\.line\.me\/api\/v\d\/ads$ - reject
-- ^https?:\/\/static\.line-scdn\.net\/ad-sdk\/ - reject
-- ^https?:\/\/nelo2-col\.linecorp\.com\/_store$ - reject
+^https?:\/\/a\.line\.me\/er\/lads\/v\d\/ei\?
+^https?:\/\/a\.line\.me\/er\/la(ss|dg)\/v\d\/event\/image
+^https?:\/\/a\.line\.me\/lass\/api\/v\d\/ads$
+^https?:\/\/a\.line\.me\/oa\/v\d\/e$
+^https?:\/\/a\.line\.me\/cs\/v\d\/oa$
+^https?:\/\/gw\.line\.naver\.jp\/ext\/lgfp\/lad\/v1$
+^https?:\/\/gw\.line\.naver\.jp\/lass\/api\/v1\/ads$
+^https?:\/\/gw\.line\.naver\.jp\/tr\/event$
+^https?:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/
+^https?:\/\/buy\.line\.me\/api\/graphql\?variables
+^https?:\/\/crsevent\.line\.me\/v\d\/imp
+^https?:\/\/obs\.linescdn\.net\/0h.+\/(o|m)\d+x\d+$
+^https?:\/\/obs\.linescdn\.net\/0h.+\/\d+p\.mp4$
+^https?:\/\/obs\.linescdn\.net\/r\/linecrs\/.+\/m180x180$
+^https?:\/\/d\.linescdn\.net\/lcpprodphoto\/20.+\.(jpg|jpeg|png)
+^https?:\/\/cix\.lineapps\.com\/R4\?
+^https?:\/\/scdn\.lineapps\.com\/appresources\/moretab\/list\.json
+^https?:\/\/scdn\.lineapps\.com\/lan\/image\/line\/bannerImageEvent\/
+^https?:\/\/scdn\.lineapps\.com\/lan\/document\/pageEvent\/line\/ios\/
+^https?:\/\/sch\.line\.me\/api\/v\d\/ads$
+^https?:\/\/static\.linescdn\.net\/adsdk\/
+^https?:\/\/nelo2col\.linecorp\.com\/_store$
