@@ -20,6 +20,7 @@ http:
   mitm:
     - "a.line.me"
     - "w.line.me"
+    - "gw.line.naver.jp"
     - "buy.line.me"
     - "crs-event.line.me"
     - "obs.line-scdn.net"
@@ -39,6 +40,7 @@ http:
     - ^https?:\/\/gw\.line\.naver\.jp\/ext\/lgfp\/lad\/v1$ - reject
     - ^https?:\/\/gw\.line\.naver\.jp\/lass\/api\/v1\/ads$ - reject
     - ^https?:\/\/gw\.line\.naver\.jp\/tr\/event$ - reject
+	- ^https?:\/\/gw\.line\.naver\.jp\/tr\/event$ - reject
     - ^https?:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/ - reject
     - ^https?:\/\/buy\.line\.me\/api\/graphql\?variables - reject
     - ^https?:\/\/crs-event\.line\.me\/v\d\/imp - reject
