@@ -56,4 +56,4 @@ http:
     - ^https?:\/\/uts-front\.line-apps\.com\/settings$ - reject
     - ^https?:\/\/static\.line-scdn\.net\/ad-sdk\/ - reject
     - ^https?:\/\/nelo2-col\.linecorp\.com\/_store$ - reject
-    - ^https?:\/\/gw\.line\.naver\.jp\/PUSH\/1\/subs\?m=\d+$ - reject
+    - ^https?:\/\/gw\.line\.naver\.jp\/PUSH\/1\/subs\?m=\d+$ transparent
