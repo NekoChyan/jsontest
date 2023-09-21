@@ -17,6 +17,20 @@ http:
     - "uts-front.line-apps.com"
     - "static.line-scdn.net"
     - "nelo2-col.linecorp.com"
+  mitm:
+    - "a.line.me"
+    - "w.line.me"
+    - "gw.line.naver.jp"
+    - "buy.line.me"
+    - "crs-event.line.me"
+    - "obs.line-scdn.net"
+    - "cix.line-apps.com"
+    - "d.line-scdn.net"
+    - "scdn.line-apps.com"
+    - "sch.line.me"
+    - "uts-front.line-apps.com"
+    - "static.line-scdn.net"
+    - "nelo2-col.linecorp.com"
   rewrite:
     - ^https?:\/\/a\.line\.me\/er\/lads\/v\d\/ei\? - reject
     - ^https?:\/\/a\.line\.me\/er\/la(ss|dg)\/v\d\/event\/image - reject
