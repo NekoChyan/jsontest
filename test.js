@@ -9,7 +9,7 @@
 	const _$ = new nobyda();
 	const r = await new Promise(e => {
 		_$.get({
-			url: 'http://192.168.1.66:5500/debug.js' // LAN backend address
+			url: 'http://127.0.0.1:5500/jsontest/worked.js' // LAN backend address
 		}, (t, c, o) => {
 			if (c && c.status == 200 && o) {
 				_$.write(o, "local-cache");
