@@ -5,7 +5,7 @@ http:
   mitm:
     - "a.line.me"
     - "w.line.me"
-    - "gw.line.naver.jp:*"
+    - gw.line.naver.jp:*
     - "buy.line.me"
     - "crs-event.line.me"
     - "obs.line-scdn.net"
