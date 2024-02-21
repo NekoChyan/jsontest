@@ -2,6 +2,8 @@
 name: ROGERXIAO
 desc: Line AD
 http:
+  force-http-engine:
+    - 'gw.line.naver.jp'
   mitm:
     - "a.line.me"
     - "w.line.me"
