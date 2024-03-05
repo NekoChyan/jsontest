@@ -39,7 +39,7 @@ $httpClient.post(request, function (error, response, data) {
     if (response.status == 200) {
       let obj = JSON.parse(data);
       let objd = JSON.parse(obj.d);
-      $notification.post(`訂餐${formatted}`, "", `Value${valuearray[currentDate.getDay()-1]}`);
+      $notification.post(`訂餐${formatted}`, "", `${valuearray[currentDate.getDay()-1]}\n${objd}`);
       console.log(objd);
       $done();
     }
