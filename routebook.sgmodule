@@ -1,7 +1,0 @@
-#!name=Route自動訂餐
-#!desc=Route自動訂餐
-
-[Script]
-[Route]更新token = type=cron, cronexp="0 50 19 * * 1,2,3,4,5", script-path=https://raw.githubusercontent.com/xRogerProject/jsontest/main/GetToken.js, wake-system=1, timeout=0
-[Route]取得訂餐序號 = type=cron, cronexp="0 30 19 * * 4", script-path=https://raw.githubusercontent.com/xRogerProject/jsontest/main/GetValue.js, wake-system=1, timeout=0
-[Route]訂餐 = type=cron, cronexp="59 59 19 * * 1,2,3,4,5", script-path=https://raw.githubusercontent.com/xRogerProject/jsontest/main/RouteBook.js, wake-system=1, timeout=0

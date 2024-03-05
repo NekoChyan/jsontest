@@ -34,9 +34,12 @@ async function refood(token){
         'para':`<dt>${formatted}</dt><rid>${valuearray[currentDate.getDay()-1]}</rid>`,
       }
     };
-    $httpClient.post(request,function (error, response, data){
-			resolve(data);
-    });
+		for(var i = 1 ; i<=5 ; i++){
+	    $httpClient.post(request,function (error, response, data){
+				console.log(i);
+				resolve(data);
+	    });
+		}
   })
 }
 (async () => {
