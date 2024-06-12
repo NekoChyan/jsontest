@@ -1,0 +1,19 @@
+const url = 'https://sheets.googleapis.com/v4/spreadsheets/1qCPhFOEOd8ZVJGa4Ghej40B8_-5k8G-3IgNXRs48fjg/values/工作表1!B1:F1?key=AIzaSyDR7oaMVQwAGPlFseckpAlZi2HtA0psml8';
+
+$httpClient.get(url, function (error, response, data) {
+    if (error) {
+        $notification.post(`GetValue`, "", "連線錯誤‼️");
+        console.log(response);
+        $done();
+    }
+    else {
+        if (response.status == 200) {
+            var parse = JSON.parse(data);
+            var values = parse.values[0];
+            var myString = values.join('\t');
+            $persistentStore.write(myString, "value");
+            $notification.post(`GetValue`, "", myString);
+            $done();
+        }
+    }
+});
