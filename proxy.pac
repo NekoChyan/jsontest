@@ -79,7 +79,7 @@ function FindProxyForURL(url, host) {
 			shExpMatch(host, "office15client.microsoft.com")||
 			shExpMatch(host, "sls.microsoft.com")
 		)
-		return "DIRECT";
+		return "PROXY 103.125.235.18:7770;";
 
 	// Some Large bandwidth consuming websites (TAIFO)
 		
