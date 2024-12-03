@@ -37,6 +37,7 @@ function FindProxyForURL(url, host) {
 			shExpMatch(host, "download.windowsupdate.com")||
 			shExpMatch(host, "aka.ms")||
 			shExpMatch(host, "amp.azure.net")||
+			shExpMatch(host, "*.whatismyip.com.tw")||
 			shExpMatch(host, "*.users.storage.live.com")||
 			shExpMatch(host, "*.adl.windows.com")||
 			shExpMatch(host, "*.skypeforbusiness.com")||
@@ -57,7 +58,7 @@ function FindProxyForURL(url, host) {
 			isInNet(hostIP, "52.238.119.141", "255.255.255.255")||  
 			isInNet(hostIP, "52.244.160.207", "255.255.255.255")
 		)
-		return "DIRECT";
+		return "PROXY 103.125.235.18:7770;";
 	
 	// Redirect to upstreams server (TAIFO) Office 365 outlook
 	// Note: will redirect to proxy.iec.inventec once fail
